@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface SPFViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UITextField *stockSymbolTextField;
+
+- (IBAction)getPrice:(id)sender;
 
 @end

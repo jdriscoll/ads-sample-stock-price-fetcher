@@ -15,6 +15,8 @@
 		D0D4F3FA15F4F7CA00EB7536 /* SPFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D4F3F915F4F7CA00EB7536 /* SPFAppDelegate.m */; };
 		D0D4F3FD15F4F7CA00EB7536 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D4F3FB15F4F7CA00EB7536 /* MainStoryboard.storyboard */; };
 		D0D4F40015F4F7CA00EB7536 /* SPFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D4F3FF15F4F7CA00EB7536 /* SPFViewController.m */; };
+		D0D4F40815F4F81A00EB7536 /* SPFPriceFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D4F40715F4F81A00EB7536 /* SPFPriceFetcher.m */; };
+		D0D4F40B15F4F8DE00EB7536 /* JCDHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D4F40A15F4F8DE00EB7536 /* JCDHTTPConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		D0D4F3FC15F4F7CA00EB7536 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		D0D4F3FE15F4F7CA00EB7536 /* SPFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFViewController.h; sourceTree = "<group>"; };
 		D0D4F3FF15F4F7CA00EB7536 /* SPFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFViewController.m; sourceTree = "<group>"; };
+		D0D4F40715F4F81A00EB7536 /* SPFPriceFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFPriceFetcher.m; sourceTree = "<group>"; };
+		D0D4F40915F4F8DE00EB7536 /* JCDHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDHTTPConnection.h; sourceTree = "<group>"; };
+		D0D4F40A15F4F8DE00EB7536 /* JCDHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDHTTPConnection.m; sourceTree = "<group>"; };
+		D0D4F41415F502AC00EB7536 /* SPFPriceFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFPriceFetcher.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,16 @@
 		D0D4F3EF15F4F7CA00EB7536 /* StockPriceFetcher */ = {
 			isa = PBXGroup;
 			children = (
+				D0D4F40915F4F8DE00EB7536 /* JCDHTTPConnection.h */,
+				D0D4F40A15F4F8DE00EB7536 /* JCDHTTPConnection.m */,
 				D0D4F3F815F4F7CA00EB7536 /* SPFAppDelegate.h */,
 				D0D4F3F915F4F7CA00EB7536 /* SPFAppDelegate.m */,
 				D0D4F3FB15F4F7CA00EB7536 /* MainStoryboard.storyboard */,
 				D0D4F3FE15F4F7CA00EB7536 /* SPFViewController.h */,
 				D0D4F3FF15F4F7CA00EB7536 /* SPFViewController.m */,
 				D0D4F3F015F4F7CA00EB7536 /* Supporting Files */,
+				D0D4F41415F502AC00EB7536 /* SPFPriceFetcher.h */,
+				D0D4F40715F4F81A00EB7536 /* SPFPriceFetcher.m */,
 			);
 			path = StockPriceFetcher;
 			sourceTree = "<group>";
@@ -165,6 +175,8 @@
 				D0D4F3F615F4F7CA00EB7536 /* main.m in Sources */,
 				D0D4F3FA15F4F7CA00EB7536 /* SPFAppDelegate.m in Sources */,
 				D0D4F40015F4F7CA00EB7536 /* SPFViewController.m in Sources */,
+				D0D4F40815F4F81A00EB7536 /* SPFPriceFetcher.m in Sources */,
+				D0D4F40B15F4F8DE00EB7536 /* JCDHTTPConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +255,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StockPriceFetcher/StockPriceFetcher-Prefix.pch";
 				INFOPLIST_FILE = "StockPriceFetcher/StockPriceFetcher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -254,6 +267,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StockPriceFetcher/StockPriceFetcher-Prefix.pch";
 				INFOPLIST_FILE = "StockPriceFetcher/StockPriceFetcher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
